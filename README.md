@@ -24,6 +24,12 @@ cd project-name
 # Install dependencies
 composer install
 
+# Create a copy of.env file
+cp .env.example .env
+
+#.env files are not generally committed to source control for security reasons. But there is a .env.example which is a template of the .env file that the project expects us to have. So we will make a copy of the .env.example file and create a .env file
+
+
 # Generate an app encryption key
 php artisan key:generate
 
