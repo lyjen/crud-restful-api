@@ -75,4 +75,7 @@ The requirements of the API should allow the Creation, Retrieval, Updating and D
 If I have time I would like to manage the error handling. I would like to display the data or results completely as I'm seeing the frontend developer's request or side. Most of all, I would like to add the UI.
 
 ## Comments
-I hope you will consider this simple representation of RESTful API CRUD. I didn't add the update for item as I'm running out of time. I also didn't able to manage the display of all datas as you will notice some values are null. I did not start immediately right after the inteviewer sent me the exam. Many thanks :)
+Please have a look in visuals and postman folder for the ERD, visual representation of API in postman and collection. 
+
+I hope you will consider this simple representation of RESTful API CRUD. 
+I didn't add the update for item as I'm running out of time and my fault not to start immediately. I also didn't able to manage the display of all datas as you will notice some values are null. Hope to hear from you. Many thanks :)
