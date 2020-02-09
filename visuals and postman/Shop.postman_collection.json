@@ -1,0 +1,636 @@
+{
+	"info": {
+		"_postman_id": "91837e38-7305-48d6-ae28-cb7b1f95919c",
+		"name": "Shop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "test@example.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1qazxsw2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "shop.exam.com/api/login",
+							"host": [
+								"shop",
+								"exam",
+								"com"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "register",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "test@example.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "1qazxsw2",
+									"type": "text"
+								},
+								{
+									"key": "c_password",
+									"value": "1qazxsw2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "shop.exam.com/api/register",
+							"host": [
+								"shop",
+								"exam",
+								"com"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						},
+						"description": "Register as user"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "Products",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMDBhYTZkYWRhN2RhYWI0YTI0ODQyODExY2RmN2ZiNjFkOWI1MTgyYjU1M2E1NTNkMTU0OTliYTkzMjk5NGE2NTdiOGI2ZGYxN2ZhZWY2OTgiLCJpYXQiOjE1ODExNDM5MDAsIm5iZiI6MTU4MTE0MzkwMCwiZXhwIjoxNjEyNzY2MzAwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Fn3aRS7Gf0VMtVSV4cwm1q4IWjOEa0-3TaOUv4z7tCf7MrQaLfexksU4s0QmirdalvQ20bpc_JwNWqgIPgkvcVGxVgnsP9VW6ht_oYgBfeIwt2Ln54l3lt4IPZldF_5EuODMb4cTSQkzbeMrY2LJz3OjGGLfXRF-WZqXTpLUL41jcyoN-NeyNL3fstw_zGwitAlEJsNTh9eSTx2Wm5zYdx-vqDSWjU-z4Z6pQGiuC6p7qQURf0peJRrQyRCg28GFt_-sVEzHMEdFZakDeOAhtQA7ST-sEquqvGVoYNhlmV_YkeeWWZFAePADTxuuW7Pw_IwjoyFtN0lKzhT_eBnC6WELW5epxl-mhpWGXbMAppwrZlhwgNf3wCaDS1p1aIDOjtIcYC6rIOCffaSQWqvlJNI8ZQ4J3Bw_Z98bmeW6UkwuXI2V6F0xH00N2AF8PDIR7l_tkx65ekZNAY140x4WjYc2NLHb-i1VqS9tOg0BqkC9Ok8gRSWPA3IwoUXFci8NA_Fcw0rhV68Y5z3cNE9sJtlvaetu06eHFp2ZNrxCmItQtqcWGAQE52PQyThse2OMJujpBwRGzkUwP55mLVtHwFf-ZNvKJZr6YryHAKWWS5FA8O_o1q3l8DzLTUqEiaoKHENPoM7o5hIw10bPrtcTgLZV3ZkJMkeCk4fvuvSjhSk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://shop.exam.com//api/products",
+							"protocol": "http",
+							"host": [
+								"shop",
+								"exam",
+								"com"
+							],
+							"path": [
+								"",
+								"api",
+								"products"
+							]
+						},
+						"description": "Display Products"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Product",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMDBhYTZkYWRhN2RhYWI0YTI0ODQyODExY2RmN2ZiNjFkOWI1MTgyYjU1M2E1NTNkMTU0OTliYTkzMjk5NGE2NTdiOGI2ZGYxN2ZhZWY2OTgiLCJpYXQiOjE1ODExNDM5MDAsIm5iZiI6MTU4MTE0MzkwMCwiZXhwIjoxNjEyNzY2MzAwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Fn3aRS7Gf0VMtVSV4cwm1q4IWjOEa0-3TaOUv4z7tCf7MrQaLfexksU4s0QmirdalvQ20bpc_JwNWqgIPgkvcVGxVgnsP9VW6ht_oYgBfeIwt2Ln54l3lt4IPZldF_5EuODMb4cTSQkzbeMrY2LJz3OjGGLfXRF-WZqXTpLUL41jcyoN-NeyNL3fstw_zGwitAlEJsNTh9eSTx2Wm5zYdx-vqDSWjU-z4Z6pQGiuC6p7qQURf0peJRrQyRCg28GFt_-sVEzHMEdFZakDeOAhtQA7ST-sEquqvGVoYNhlmV_YkeeWWZFAePADTxuuW7Pw_IwjoyFtN0lKzhT_eBnC6WELW5epxl-mhpWGXbMAppwrZlhwgNf3wCaDS1p1aIDOjtIcYC6rIOCffaSQWqvlJNI8ZQ4J3Bw_Z98bmeW6UkwuXI2V6F0xH00N2AF8PDIR7l_tkx65ekZNAY140x4WjYc2NLHb-i1VqS9tOg0BqkC9Ok8gRSWPA3IwoUXFci8NA_Fcw0rhV68Y5z3cNE9sJtlvaetu06eHFp2ZNrxCmItQtqcWGAQE52PQyThse2OMJujpBwRGzkUwP55mLVtHwFf-ZNvKJZr6YryHAKWWS5FA8O_o1q3l8DzLTUqEiaoKHENPoM7o5hIw10bPrtcTgLZV3ZkJMkeCk4fvuvSjhSk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://shop.exam.com/api/products/6",
+							"protocol": "http",
+							"host": [
+								"shop",
+								"exam",
+								"com"
+							],
+							"path": [
+								"api",
+								"products",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Product",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMDBhYTZkYWRhN2RhYWI0YTI0ODQyODExY2RmN2ZiNjFkOWI1MTgyYjU1M2E1NTNkMTU0OTliYTkzMjk5NGE2NTdiOGI2ZGYxN2ZhZWY2OTgiLCJpYXQiOjE1ODExNDM5MDAsIm5iZiI6MTU4MTE0MzkwMCwiZXhwIjoxNjEyNzY2MzAwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Fn3aRS7Gf0VMtVSV4cwm1q4IWjOEa0-3TaOUv4z7tCf7MrQaLfexksU4s0QmirdalvQ20bpc_JwNWqgIPgkvcVGxVgnsP9VW6ht_oYgBfeIwt2Ln54l3lt4IPZldF_5EuODMb4cTSQkzbeMrY2LJz3OjGGLfXRF-WZqXTpLUL41jcyoN-NeyNL3fstw_zGwitAlEJsNTh9eSTx2Wm5zYdx-vqDSWjU-z4Z6pQGiuC6p7qQURf0peJRrQyRCg28GFt_-sVEzHMEdFZakDeOAhtQA7ST-sEquqvGVoYNhlmV_YkeeWWZFAePADTxuuW7Pw_IwjoyFtN0lKzhT_eBnC6WELW5epxl-mhpWGXbMAppwrZlhwgNf3wCaDS1p1aIDOjtIcYC6rIOCffaSQWqvlJNI8ZQ4J3Bw_Z98bmeW6UkwuXI2V6F0xH00N2AF8PDIR7l_tkx65ekZNAY140x4WjYc2NLHb-i1VqS9tOg0BqkC9Ok8gRSWPA3IwoUXFci8NA_Fcw0rhV68Y5z3cNE9sJtlvaetu06eHFp2ZNrxCmItQtqcWGAQE52PQyThse2OMJujpBwRGzkUwP55mLVtHwFf-ZNvKJZr6YryHAKWWS5FA8O_o1q3l8DzLTUqEiaoKHENPoM7o5hIw10bPrtcTgLZV3ZkJMkeCk4fvuvSjhSk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://shop.exam.com/api/products/6?title=IphoneX&description=IphoneX&product_status_id=2&quantity=0&price=50000&sku=IPX1000&category_id=2",
+							"protocol": "http",
+							"host": [
+								"shop",
+								"exam",
+								"com"
+							],
+							"path": [
+								"api",
+								"products",
+								"6"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "IphoneX"
+								},
+								{
+									"key": "description",
+									"value": "IphoneX"
+								},
+								{
+									"key": "product_status_id",
+									"value": "2"
+								},
+								{
+									"key": "quantity",
+									"value": "0"
+								},
+								{
+									"key": "price",
+									"value": "50000"
+								},
+								{
+									"key": "sku",
+									"value": "IPX1000"
+								},
+								{
+									"key": "category_id",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMDBhYTZkYWRhN2RhYWI0YTI0ODQyODExY2RmN2ZiNjFkOWI1MTgyYjU1M2E1NTNkMTU0OTliYTkzMjk5NGE2NTdiOGI2ZGYxN2ZhZWY2OTgiLCJpYXQiOjE1ODExNDM5MDAsIm5iZiI6MTU4MTE0MzkwMCwiZXhwIjoxNjEyNzY2MzAwLCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.Fn3aRS7Gf0VMtVSV4cwm1q4IWjOEa0-3TaOUv4z7tCf7MrQaLfexksU4s0QmirdalvQ20bpc_JwNWqgIPgkvcVGxVgnsP9VW6ht_oYgBfeIwt2Ln54l3lt4IPZldF_5EuODMb4cTSQkzbeMrY2LJz3OjGGLfXRF-WZqXTpLUL41jcyoN-NeyNL3fstw_zGwitAlEJsNTh9eSTx2Wm5zYdx-vqDSWjU-z4Z6pQGiuC6p7qQURf0peJRrQyRCg28GFt_-sVEzHMEdFZakDeOAhtQA7ST-sEquqvGVoYNhlmV_YkeeWWZFAePADTxuuW7Pw_IwjoyFtN0lKzhT_eBnC6WELW5epxl-mhpWGXbMAppwrZlhwgNf3wCaDS1p1aIDOjtIcYC6rIOCffaSQWqvlJNI8ZQ4J3Bw_Z98bmeW6UkwuXI2V6F0xH00N2AF8PDIR7l_tkx65ekZNAY140x4WjYc2NLHb-i1VqS9tOg0BqkC9Ok8gRSWPA3IwoUXFci8NA_Fcw0rhV68Y5z3cNE9sJtlvaetu06eHFp2ZNrxCmItQtqcWGAQE52PQyThse2OMJujpBwRGzkUwP55mLVtHwFf-ZNvKJZr6YryHAKWWS5FA8O_o1q3l8DzLTUqEiaoKHENPoM7o5hIw10bPrtcTgLZV3ZkJMkeCk4fvuvSjhSk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title",
+									"value": "Iphone X",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "iPhone 11 shoots beautifully sharp 4K video at 60 fps across all its cameras. ",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "47990",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "product_status_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "sku",
+									"value": "IPX1000",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://shop.exam.com/api/products",
+							"protocol": "http",
+							"host": [
+								"shop",
+								"exam",
+								"com"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "order",
+			"item": [
+				{
+					"name": "Create Order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"type": "text",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOWM1NTM3YjZhYThhMWEyNDg4YzNlZmQzYjkxOGIyY2I2ODIxYWFhYTEyZjc3NjQxMDFiMDZjMzBhMjc3MTUxZmRlY2M5MzI2OGZhN2E5MGYiLCJpYXQiOjE1ODExNTg5MzYsIm5iZiI6MTU4MTE1ODkzNiwiZXhwIjoxNjEyNzgxMzM2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.dGqijlrBd7-gfXJuz_HcdBfexta3PgjvaYb09Ng8gFhZ9yJLNacoEmnD3m8Yc7GuFM7KwH7G0UbHsicEoGJVL8-Rlqc3dFjI_lYDzO7xwTFt9LwtfQ2NsSP6nHnIYwrFhunCPUi13RqH6V6CQQd_s3yffAQoMP2xwmxoyKIWFUTSdIJx_NGPE_tcZmqtDHhNtXez_KkXclycm939mey3ORyPNzfta_hlGg0KYdbeB95mW2xdqOA3ftqgwxWcj9NRUxfvlfBamXKp-ywAKj0JIncpUl7ROqPdlZIuNZORG7vghyYVwP0oqrd1VBZ4Yj0A0xBBIKaCb1dOyz20GxyTtkENiNiNFf6Ojyjz9Itu-vmWTJpc55S9ZRxr9Z-ggKUfoENqfzWciyHRRgTr5IXWCsVk8VAqWBx8kXRiJXrPphEtp_nOX0Hcy6TlLDxevijvipLRqUDuGraDHFPADHd_BGMyDi1kJEQr9AQjc70hnvYbUB7QtgvZDG5iJV8mwBtaVQBzsf1hYbtlQlsD4Eq7rcuSftuqKOC_cXN1cEh-HzMvbzlm4sdmbzNebaz2Zw4qi_m2RBdyp9ESqFMQb_izKm2rWME7fQTGKIixslEr2mfDKWL3Pbi3sQI8VD_Inp1RdG9Ou7Gr3ZSei-BFb6vEgIw37eEhmXbwdKVskDmas54"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "customer_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "order_status_id",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "product_id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "unit_cost",
+									"value": "1000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://shop.exam.com/api/orders",
+							"protocol": "http",
+							"host": [
+								"shop",
+								"exam",
+								"com"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						},
+						"description": "In order to create order, we need an order_id first. I require atleast one item product just to test the available stocks. Please take note, we can input a dummy to unit cost because I believe front end can handle that."
+					},
+					"response": []
+				},
+				{
+					"name": "Create Item",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOWM1NTM3YjZhYThhMWEyNDg4YzNlZmQzYjkxOGIyY2I2ODIxYWFhYTEyZjc3NjQxMDFiMDZjMzBhMjc3MTUxZmRlY2M5MzI2OGZhN2E5MGYiLCJpYXQiOjE1ODExNTg5MzYsIm5iZiI6MTU4MTE1ODkzNiwiZXhwIjoxNjEyNzgxMzM2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.dGqijlrBd7-gfXJuz_HcdBfexta3PgjvaYb09Ng8gFhZ9yJLNacoEmnD3m8Yc7GuFM7KwH7G0UbHsicEoGJVL8-Rlqc3dFjI_lYDzO7xwTFt9LwtfQ2NsSP6nHnIYwrFhunCPUi13RqH6V6CQQd_s3yffAQoMP2xwmxoyKIWFUTSdIJx_NGPE_tcZmqtDHhNtXez_KkXclycm939mey3ORyPNzfta_hlGg0KYdbeB95mW2xdqOA3ftqgwxWcj9NRUxfvlfBamXKp-ywAKj0JIncpUl7ROqPdlZIuNZORG7vghyYVwP0oqrd1VBZ4Yj0A0xBBIKaCb1dOyz20GxyTtkENiNiNFf6Ojyjz9Itu-vmWTJpc55S9ZRxr9Z-ggKUfoENqfzWciyHRRgTr5IXWCsVk8VAqWBx8kXRiJXrPphEtp_nOX0Hcy6TlLDxevijvipLRqUDuGraDHFPADHd_BGMyDi1kJEQr9AQjc70hnvYbUB7QtgvZDG5iJV8mwBtaVQBzsf1hYbtlQlsD4Eq7rcuSftuqKOC_cXN1cEh-HzMvbzlm4sdmbzNebaz2Zw4qi_m2RBdyp9ESqFMQb_izKm2rWME7fQTGKIixslEr2mfDKWL3Pbi3sQI8VD_Inp1RdG9Ou7Gr3ZSei-BFb6vEgIw37eEhmXbwdKVskDmas54",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order_id",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "product_id",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "unit_cost",
+									"value": "1000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://shop.exam.com/api/orders/item?order_id=9&product_id=5&quantity=2&unit_cost=500",
+							"protocol": "http",
+							"host": [
+								"shop",
+								"exam",
+								"com"
+							],
+							"path": [
+								"api",
+								"orders",
+								"item"
+							],
+							"query": [
+								{
+									"key": "order_id",
+									"value": "9"
+								},
+								{
+									"key": "product_id",
+									"value": "5"
+								},
+								{
+									"key": "quantity",
+									"value": "2"
+								},
+								{
+									"key": "unit_cost",
+									"value": "500"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Item",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOWM1NTM3YjZhYThhMWEyNDg4YzNlZmQzYjkxOGIyY2I2ODIxYWFhYTEyZjc3NjQxMDFiMDZjMzBhMjc3MTUxZmRlY2M5MzI2OGZhN2E5MGYiLCJpYXQiOjE1ODExNTg5MzYsIm5iZiI6MTU4MTE1ODkzNiwiZXhwIjoxNjEyNzgxMzM2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.dGqijlrBd7-gfXJuz_HcdBfexta3PgjvaYb09Ng8gFhZ9yJLNacoEmnD3m8Yc7GuFM7KwH7G0UbHsicEoGJVL8-Rlqc3dFjI_lYDzO7xwTFt9LwtfQ2NsSP6nHnIYwrFhunCPUi13RqH6V6CQQd_s3yffAQoMP2xwmxoyKIWFUTSdIJx_NGPE_tcZmqtDHhNtXez_KkXclycm939mey3ORyPNzfta_hlGg0KYdbeB95mW2xdqOA3ftqgwxWcj9NRUxfvlfBamXKp-ywAKj0JIncpUl7ROqPdlZIuNZORG7vghyYVwP0oqrd1VBZ4Yj0A0xBBIKaCb1dOyz20GxyTtkENiNiNFf6Ojyjz9Itu-vmWTJpc55S9ZRxr9Z-ggKUfoENqfzWciyHRRgTr5IXWCsVk8VAqWBx8kXRiJXrPphEtp_nOX0Hcy6TlLDxevijvipLRqUDuGraDHFPADHd_BGMyDi1kJEQr9AQjc70hnvYbUB7QtgvZDG5iJV8mwBtaVQBzsf1hYbtlQlsD4Eq7rcuSftuqKOC_cXN1cEh-HzMvbzlm4sdmbzNebaz2Zw4qi_m2RBdyp9ESqFMQb_izKm2rWME7fQTGKIixslEr2mfDKWL3Pbi3sQI8VD_Inp1RdG9Ou7Gr3ZSei-BFb6vEgIw37eEhmXbwdKVskDmas54",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://shop.exam.com/api/orders/item/24",
+							"protocol": "http",
+							"host": [
+								"shop",
+								"exam",
+								"com"
+							],
+							"path": [
+								"api",
+								"orders",
+								"item",
+								"24"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Order",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOWM1NTM3YjZhYThhMWEyNDg4YzNlZmQzYjkxOGIyY2I2ODIxYWFhYTEyZjc3NjQxMDFiMDZjMzBhMjc3MTUxZmRlY2M5MzI2OGZhN2E5MGYiLCJpYXQiOjE1ODExNTg5MzYsIm5iZiI6MTU4MTE1ODkzNiwiZXhwIjoxNjEyNzgxMzM2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.dGqijlrBd7-gfXJuz_HcdBfexta3PgjvaYb09Ng8gFhZ9yJLNacoEmnD3m8Yc7GuFM7KwH7G0UbHsicEoGJVL8-Rlqc3dFjI_lYDzO7xwTFt9LwtfQ2NsSP6nHnIYwrFhunCPUi13RqH6V6CQQd_s3yffAQoMP2xwmxoyKIWFUTSdIJx_NGPE_tcZmqtDHhNtXez_KkXclycm939mey3ORyPNzfta_hlGg0KYdbeB95mW2xdqOA3ftqgwxWcj9NRUxfvlfBamXKp-ywAKj0JIncpUl7ROqPdlZIuNZORG7vghyYVwP0oqrd1VBZ4Yj0A0xBBIKaCb1dOyz20GxyTtkENiNiNFf6Ojyjz9Itu-vmWTJpc55S9ZRxr9Z-ggKUfoENqfzWciyHRRgTr5IXWCsVk8VAqWBx8kXRiJXrPphEtp_nOX0Hcy6TlLDxevijvipLRqUDuGraDHFPADHd_BGMyDi1kJEQr9AQjc70hnvYbUB7QtgvZDG5iJV8mwBtaVQBzsf1hYbtlQlsD4Eq7rcuSftuqKOC_cXN1cEh-HzMvbzlm4sdmbzNebaz2Zw4qi_m2RBdyp9ESqFMQb_izKm2rWME7fQTGKIixslEr2mfDKWL3Pbi3sQI8VD_Inp1RdG9Ou7Gr3ZSei-BFb6vEgIw37eEhmXbwdKVskDmas54",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://shop.exam.com/api/orders/3",
+							"protocol": "http",
+							"host": [
+								"shop",
+								"exam",
+								"com"
+							],
+							"path": [
+								"api",
+								"orders",
+								"3"
+							]
+						},
+						"description": "Delete Order"
+					},
+					"response": []
+				},
+				{
+					"name": "Display Item by ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOWM1NTM3YjZhYThhMWEyNDg4YzNlZmQzYjkxOGIyY2I2ODIxYWFhYTEyZjc3NjQxMDFiMDZjMzBhMjc3MTUxZmRlY2M5MzI2OGZhN2E5MGYiLCJpYXQiOjE1ODExNTg5MzYsIm5iZiI6MTU4MTE1ODkzNiwiZXhwIjoxNjEyNzgxMzM2LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.dGqijlrBd7-gfXJuz_HcdBfexta3PgjvaYb09Ng8gFhZ9yJLNacoEmnD3m8Yc7GuFM7KwH7G0UbHsicEoGJVL8-Rlqc3dFjI_lYDzO7xwTFt9LwtfQ2NsSP6nHnIYwrFhunCPUi13RqH6V6CQQd_s3yffAQoMP2xwmxoyKIWFUTSdIJx_NGPE_tcZmqtDHhNtXez_KkXclycm939mey3ORyPNzfta_hlGg0KYdbeB95mW2xdqOA3ftqgwxWcj9NRUxfvlfBamXKp-ywAKj0JIncpUl7ROqPdlZIuNZORG7vghyYVwP0oqrd1VBZ4Yj0A0xBBIKaCb1dOyz20GxyTtkENiNiNFf6Ojyjz9Itu-vmWTJpc55S9ZRxr9Z-ggKUfoENqfzWciyHRRgTr5IXWCsVk8VAqWBx8kXRiJXrPphEtp_nOX0Hcy6TlLDxevijvipLRqUDuGraDHFPADHd_BGMyDi1kJEQr9AQjc70hnvYbUB7QtgvZDG5iJV8mwBtaVQBzsf1hYbtlQlsD4Eq7rcuSftuqKOC_cXN1cEh-HzMvbzlm4sdmbzNebaz2Zw4qi_m2RBdyp9ESqFMQb_izKm2rWME7fQTGKIixslEr2mfDKWL3Pbi3sQI8VD_Inp1RdG9Ou7Gr3ZSei-BFb6vEgIw37eEhmXbwdKVskDmas54",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://shop.exam.com/api/orders/item/35",
+							"protocol": "http",
+							"host": [
+								"shop",
+								"exam",
+								"com"
+							],
+							"path": [
+								"api",
+								"orders",
+								"item",
+								"35"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Display Order by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYmNmMDdlMzY2NzA1N2FjODI2MDI4MGNiNDBkYTJlNTdiMjYwN2Q2ZjdhZjQzYTdlZTk1NjllYjI0ZTc4MjU2ZjFmNWRmNWJkM2I2M2RiY2EiLCJpYXQiOjE1ODExODA5MDgsIm5iZiI6MTU4MTE4MDkwOCwiZXhwIjoxNjEyODAzMzA4LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.QUYUgBnKwqFEIZFLUrwrnNChraiehZWUfXa-451UdLtJ5dEhjRBACsHBuS1A3ex5eYcbLBfsWM7ma65fq8d5I8d9u1HhBfhnZ92ICIxYyZRQFIma1uB74oql5t2V0nrstXNBN4mPhx-Zg5tH3vVHEJewKIfRnq9_h_anDFA0jIfxMoF88cgnCWX-C_BfpzdDx_mwEHgTGpuD1PZuJb6E5c3xR3Or9cBi3K8yhK8kBe9rEhGskgpt1HTUA2kpOP-gmexZclq4gj9gTyfjzBJEWVrK5E5qYPakiielnLG0I_FtHztrswpXKXNu3L4ZQ5vKxJuXZMXmbyL0-r4BSUhjduUWP2zTNyshCar2VGlUIipR0IkxcinQ3SUucNhfleHABVA3UP3uoRAfDKlKcYhItGdKO2U7rabuBppa2s5aA4QLtnP6w6aghEVwD0pzI8BNPAov79rL8loDQXMsfQmMNpU_hXLxotkyBkEc9uZV6sSX_-n2VUi8x40awd6CFDPEy09hNeDqiuAV4Bt_fiUiEoKNQsDKEVH_59WLBWRzoODEGhT-nP5RsAjSO-TQkpt8C9XJ6wypcxE_JAGoTSkNhvFqNrVfHccKRV0QkqLK63nr85PLKrJXGg0E9t_8aiX31Z-1XR09zZqTM4MUjs5j8S572E4qxkPg738iDKdItUY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://shop.exam.com/api/orders/4",
+							"protocol": "http",
+							"host": [
+								"shop",
+								"exam",
+								"com"
+							],
+							"path": [
+								"api",
+								"orders",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Display Orders",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiYmNmMDdlMzY2NzA1N2FjODI2MDI4MGNiNDBkYTJlNTdiMjYwN2Q2ZjdhZjQzYTdlZTk1NjllYjI0ZTc4MjU2ZjFmNWRmNWJkM2I2M2RiY2EiLCJpYXQiOjE1ODExODA5MDgsIm5iZiI6MTU4MTE4MDkwOCwiZXhwIjoxNjEyODAzMzA4LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.QUYUgBnKwqFEIZFLUrwrnNChraiehZWUfXa-451UdLtJ5dEhjRBACsHBuS1A3ex5eYcbLBfsWM7ma65fq8d5I8d9u1HhBfhnZ92ICIxYyZRQFIma1uB74oql5t2V0nrstXNBN4mPhx-Zg5tH3vVHEJewKIfRnq9_h_anDFA0jIfxMoF88cgnCWX-C_BfpzdDx_mwEHgTGpuD1PZuJb6E5c3xR3Or9cBi3K8yhK8kBe9rEhGskgpt1HTUA2kpOP-gmexZclq4gj9gTyfjzBJEWVrK5E5qYPakiielnLG0I_FtHztrswpXKXNu3L4ZQ5vKxJuXZMXmbyL0-r4BSUhjduUWP2zTNyshCar2VGlUIipR0IkxcinQ3SUucNhfleHABVA3UP3uoRAfDKlKcYhItGdKO2U7rabuBppa2s5aA4QLtnP6w6aghEVwD0pzI8BNPAov79rL8loDQXMsfQmMNpU_hXLxotkyBkEc9uZV6sSX_-n2VUi8x40awd6CFDPEy09hNeDqiuAV4Bt_fiUiEoKNQsDKEVH_59WLBWRzoODEGhT-nP5RsAjSO-TQkpt8C9XJ6wypcxE_JAGoTSkNhvFqNrVfHccKRV0QkqLK63nr85PLKrJXGg0E9t_8aiX31Z-1XR09zZqTM4MUjs5j8S572E4qxkPg738iDKdItUY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://shop.exam.com/api/orders",
+							"protocol": "http",
+							"host": [
+								"shop",
+								"exam",
+								"com"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Order",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMGY3NWVlOTViMmEzZWZmZTllMzQyNmJkNDhhMTQzMDQ0Mzc3OWU3M2YwOTQyM2Q1OWE2ZDcxNjYzYzc2M2Y4MjQzNTQyNGI4MTNmZGEzMDciLCJpYXQiOjE1ODEyMjE4NTksIm5iZiI6MTU4MTIyMTg1OSwiZXhwIjoxNjEyODQ0MjU5LCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.bJpknl_QqKkPoTMxPyZEl_Z-dp4_UcTJ3ejEJQ-SlpK48DbdQny0-csLmH3qUCGUhY6XT8UfXn0zKDc9tf-1EuweAEHvT6QNmOjmCIK9XEpDNwFUDcJKFdx5J6F0Ab5Nk8GvYNjRC5HceoXGkYcQJhLwjDOrVLPpNfRqU63RC_efsIs0YMxo4-3677FpnYXDDyQsd6QTHEp3VkFXOx6yflV5yVjDoN9692xMQTnBdCqt5DOss-vfcZJrt82aL-7Fg37qTlsFq_FVykuQGEI5K-qNFZYbHlnPy8C4BhVvZBtJsaKm5kgqHEOwGQtXHQIQJrMaCgiCX1IZexlK-2eTKjBT7mCpEAQwkVBSjwog7pf0U9TB5FtqSbtuNrl5OYYC0zxpjJU_tNl9Vsjmb9mH1skO8WZFmRaVuowh1rifi4PJf65_OOmENaOyJx_Y0ekZQeRDekSmyozQYjPiHKX_w4Rf2feBItTkbDT0kFDQnbPvb_1qVlCp_2u8aKFu-hBD5sJBNPkEdcjhUpnYosbO0YtjmNMVZ9AW3L-Rrjc6lWiK49uj4IsDzzGuk53yCxuUcw5uNcwjJ1SXT56qWnMlJ_VctcdgeqsQI0bcYCGjhPQy8FAVtmS03GAfnIW95qEB7QQth30lhtp1ASpcUob0tJUbssFFXGMKamXckEXdkzs",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://shop.exam.com/api/orders/9?customer_id=1&order_status_id=4",
+							"protocol": "http",
+							"host": [
+								"shop",
+								"exam",
+								"com"
+							],
+							"path": [
+								"api",
+								"orders",
+								"9"
+							],
+							"query": [
+								{
+									"key": "customer_id",
+									"value": "1"
+								},
+								{
+									"key": "order_status_id",
+									"value": "4"
+								}
+							]
+						},
+						"description": "When order status has been updated to Completed, we have to manage the product stocks. By deducting product quantity to original product quantity."
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
